@@ -24,6 +24,18 @@ module.exports = {
 	afterConnected() {
 		this.logger.info("Connected successfully");
 	},
+	entityCreated(json, ctx) {
+		this.logger.info("New entity created!");
+	},
+
+	entityUpdated(json, ctx) {
+		// You can also access to Context
+		this.logger.info(`Entity updated by '${ctx.meta.user.name}' user!`);
+	},
+
+	entityRemoved(json, ctx) {
+		this.logger.info("Entity removed", json);
+	},
 	// Add Hooks to DB actions
 	hooks: {
 		after: {
