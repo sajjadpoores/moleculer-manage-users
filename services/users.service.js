@@ -21,8 +21,19 @@ module.exports = {
 			email: "string",
 		},
 	},
-
 	afterConnected() {
 		this.logger.info("Connected successfully");
 	},
+	// Add Hooks to DB actions
+	hooks: {
+		after: {
+			get: [
+				(ctx, res) => {
+					delete res.password;
+					return res;
+				},
+			],
+		},
+	},
+	actions: {},
 };
