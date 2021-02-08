@@ -3,12 +3,11 @@
 # microservice
 This is a [Moleculer](https://moleculer.services/)-based microservices project. Generated with the [Moleculer CLI](https://moleculer.services/docs/0.14/moleculer-cli.html).
 
-## Usage
+## HOW TO USE
 Start the project with `npm run dev` command. 
 In the terminal, try the following commands:
-- `nodes` - List all connected nodes.
-- `actions` - List all registered service actions.
-- `call users.create '{ "name": "a name", "username": "someUsername", "email": "some@real.email", "password": "yourPassword"}'` - Creates new user
+
+- `call users.create '{ "name": "a name", "username": "someUsername", "email": "youremail@gmail.com", "password": "yourPassword"}'` - Creates new user
 - `call users.find` - Shows list of all users
 - `call users.get '{"id": "6021303cc9c9b042fc837fd8"}'` - Show desired user with given ID as parameter
 - `call users.update '{"id": "6021303cc9c9b042fc837fd8", "username": "updated2", "email": "qwe2@qwe.com"}'` - Updates the user with given ID and fields
