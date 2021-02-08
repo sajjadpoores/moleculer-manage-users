@@ -8,14 +8,17 @@ Start the project with `npm run dev` command.
 In the terminal, try the following commands:
 - `nodes` - List all connected nodes.
 - `actions` - List all registered service actions.
-- `call greeter.hello` - Call the `greeter.hello` action.
-- `call greeter.welcome --name John` - Call the `greeter.welcome` action with the `name` parameter.
+- `call users.create '{ "name": "a name", "username": "someUsername", "email": "some@real.email", "password": "yourPassword"}'` - Creates new user
+- `call users.find` - Shows list of all users
+- `call users.get '{"id": "6021303cc9c9b042fc837fd8"}'` - Show desired user with given ID as parameter
+- `call users.update '{"id": "6021303cc9c9b042fc837fd8", "username": "updated2", "email": "qwe2@qwe.com"}'` - Updates the user with given ID and fields
+- `call users.remove '{"id": "6021303cc9c9b042fc837fd8"}'` - Deletes the user with given ID
+
 
 
 
 ## Services
-- **api**: API Gateway services
-- **greeter**: Sample service with `hello` and `welcome` actions.
+- **users**: a Service to manage users (do CRUD actions on users collection of mongoDB database)
 
 
 ## Useful links
