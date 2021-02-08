@@ -54,8 +54,7 @@ module.exports = {
 	},
 
 	entityUpdated(json, ctx) {
-		// You can also access to Context
-		this.logger.info(`Entity updated by '${ctx.meta.user.name}' user!`);
+		this.logger.info(`Entity updated`);
 	},
 
 	entityRemoved(json, ctx) {
