@@ -26,6 +26,8 @@
     "moleculer": "^0.14.10",
     "moleculer-db": "^0.8.11",
     "moleculer-db-adapter-mongo": "^0.4.10",
+    "moleculer-db-adapter-mongoose": "^0.8.9",
+    "mongoose": "^5.11.15",
     "nats": "^1.4.12"
   },
   "engines": {
